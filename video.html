@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  </head>
+
+  <body>
+    <a-scene>
+      <a-assets>
+        <video
+          id="kal"
+          autoplay
+          loop="true"
+          src="https://cdn.glitch.global/d0ae6ea1-c2eb-411f-b764-db916d200b1e/kaleidoscope%2001.mp4?v=1645207969473"
+        ></video>
+      </a-assets>
+      
+      <a-video src="#kal" width="16" height="9" position="0 0 -20"></a-video>
+
+      <a-curvedimage
+        src="#kal"
+        autoplay
+        loop="true"
+        height="3.0"
+        radius="5.7"
+        theta-length="72"
+        rotation="0 100 0"
+        scale="0.8 0.8 0.8"
+      ></a-curvedimage>
+
+      <a-torus-knot
+        color="#blue"
+        arc="180"
+        p="12"
+        q="17"
+        metalness="0.7"
+        radius="3"
+        radius-tubular="0.1"
+        scale="0.2 0.2 0.2"
+        position="0 2 -5"
+      ></a-torus-knot>
+    </a-scene>
+  </body>
+</html>
