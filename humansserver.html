@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aframe-event-set-component@5.0.0/dist/aframe-event-set-component.min.js"></script>
+
+  <!-- https://aframe.io/docs/1.3.0/components/sound.html -->
+  <script>
+      AFRAME.registerComponent('sound-events', {
+        init: function () {
+          var el = this.el;  // <a-box>
+          el.addEventListener('click', function () {
+            el.components.sound.playSound();
+          });
+          el.addEventListener('mouseleave', function () {
+            el.components.sound.stopSound();
+          });
+        }
+      });
+    </script>
+  
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <video
+          id="H01"
+          autoplay
+          loop="true"
+          src="http://ima.hunter.cuny.edu/~desouzac/ima/h01.mp4"
+        ></video>
+
+        <video
+          id="H02"
+          autoplay
+          loop="true"
+          src="http://ima.hunter.cuny.edu/~desouzac/ima/h02.mp4"
+        ></video>
+
+        <video
+          id="H03"
+          autoplay
+          loop="true"
+          src="http://ima.hunter.cuny.edu/~desouzac/ima/h03.mp4"
+        ></video>
+
+        <video
+          id="H04"
+          autoplay
+          loop="true"
+          src="http://ima.hunter.cuny.edu/~desouzac/ima/h04.mp4"
+        ></video>
+
+        <video
+          id="H05"
+          autoplay
+          loop="true"
+          src="http://ima.hunter.cuny.edu/~desouzac/ima/h05.mp4"
+        ></video>
+
+        <video
+          id="H06"
+          autoplay
+          loop="true"
+          src="http://ima.hunter.cuny.edu/~desouzac/ima/h06.mp4"
+        ></video>
+
+        <video
+          id="H07"
+          autoplay
+          loop="true"
+          src="http://ima.hunter.cuny.edu/~desouzac/ima/h07.mp4"
+        ></video>
+
+        <video
+          id="H08"
+          autoplay
+          loop="true"
+          src="http://ima.hunter.cuny.edu/~desouzac/ima/h08.mp4"
+        ></video>
+
+        <video
+          id="H09"
+          autoplay
+          loop="true"
+          src="http://ima.hunter.cuny.edu/~desouzac/ima/h09.mp4"
+        ></video>
+
+        <video
+          id="H10"
+          autoplay
+          loop="true"
+          src="http://ima.hunter.cuny.edu/~desouzac/ima/h10.mp4"
+        ></video>
+
+        <video
+          id="H11"
+          autoplay
+          loop="true"
+          src="http://ima.hunter.cuny.edu/~desouzac/ima/h11.mp4"
+        ></video>
+
+        <video
+          id="H12"
+          autoplay
+          loop="true"
+          src="http://ima.hunter.cuny.edu/~desouzac/ima/h12.mp4"
+        ></video>
+
+        <video
+          id="H13"
+          autoplay
+          loop="true"
+          src="http://ima.hunter.cuny.edu/~desouzac/ima/h13.mp4"
+        ></video>
+
+        <video
+          id="H14"
+          autoplay
+          loop="true"
+          src="http://ima.hunter.cuny.edu/~desouzac/ima/h14.mp4"
+        ></video>
+
+        <video
+          id="H15"
+          autoplay
+          loop="true"
+          src="http://ima.hunter.cuny.edu/~desouzac/ima/h15.mp4"
+        ></video>
+
+        <video
+          id="H16"
+          autoplay
+          loop="true"
+          src="http://ima.hunter.cuny.edu/~desouzac/ima/h16.mp4"
+        ></video>
+
+        <video
+          id="H17"
+          autoplay
+          loop="true"
+          src="http://ima.hunter.cuny.edu/~desouzac/ima/h17.mp4"
+        ></video>
+
+        <video
+          id="H18"
+          autoplay
+          loop="true"
+          src="http://ima.hunter.cuny.edu/~desouzac/ima/h18.mp4"
+        ></video>
+
+        <video
+          id="H19"
+          autoplay
+          loop="true"
+          src="http://ima.hunter.cuny.edu/~desouzac/ima/h19.mp4"
+        ></video>
+
+        <video
+          id="H20"
+          autoplay
+          loop="true"
+          src="http://ima.hunter.cuny.edu/~desouzac/ima/h20.mp4"
+        ></video>
+
+        <video
+          id="H21"
+          autoplay
+          loop="true"
+          src="http://ima.hunter.cuny.edu/~desouzac/ima/h21.mp4"
+        ></video>
+
+        <video
+          id="H22"
+          autoplay
+          loop="true"
+          src="http://ima.hunter.cuny.edu/~desouzac/ima/h22.mp4"
+        ></video>
+        
+     
+
+        
+        <audio id="ah01" src="http://ima.hunter.cuny.edu/~desouzac/ima/audioh01.mp3" preload="auto"></audio>
+        
+        <audio id="ah02" src="http://ima.hunter.cuny.edu/~desouzac/ima/audioh02.mp3" preload="auto"></audio>
+        
+        <audio id="ah03" src="http://ima.hunter.cuny.edu/~desouzac/ima/audioh03.mp3" preload="auto"></audio>
+        
+        <audio id="ah04" src="http://ima.hunter.cuny.edu/~desouzac/ima/audioh04.mp3" preload="auto"></audio>
+        
+        <audio id="ah05" src="http://ima.hunter.cuny.edu/~desouzac/ima/audioh05.mp3" preload="auto"></audio>
+        
+        <audio id="ah06" src="http://ima.hunter.cuny.edu/~desouzac/ima/audioh06.mp3" preload="auto"></audio>
+        
+        <audio id="ah07" src="http://ima.hunter.cuny.edu/~desouzac/ima/audioh07.mp3" preload="auto"></audio>
+        
+        <audio id="ah08" src="http://ima.hunter.cuny.edu/~desouzac/ima/audioh08.mp3" preload="auto"></audio>
+        
+        <audio id="ah09" src="http://ima.hunter.cuny.edu/~desouzac/ima/audioh09.mp3" preload="auto"></audio>
+        
+        <audio id="ah10" src="http://ima.hunter.cuny.edu/~desouzac/ima/audioh10.mp3" preload="auto"></audio>
+        
+        <audio id="ah11" src="http://ima.hunter.cuny.edu/~desouzac/ima/audioh11.mp3" preload="auto"></audio>
+        
+        <audio id="ah12" src="http://ima.hunter.cuny.edu/~desouzac/ima/audioh12.mp3" preload="auto"></audio>
+        
+        <audio id="ah13" src="http://ima.hunter.cuny.edu/~desouzac/ima/audioh13.mp3" preload="auto"></audio>
+        
+        <audio id="ah14" src="http://ima.hunter.cuny.edu/~desouzac/ima/audioh14.mp3" preload="auto"></audio>
+        
+        <audio id="ah15" src="http://ima.hunter.cuny.edu/~desouzac/ima/audioh15.mp3" preload="auto"></audio>
+        
+        <audio id="ah16" src="http://ima.hunter.cuny.edu/~desouzac/ima/audioh16.mp3" preload="auto"></audio>
+        
+        <audio id="ah17" src="http://ima.hunter.cuny.edu/~desouzac/ima/audioh17.mp3" preload="auto"></audio>
+        
+        <audio id="ah18" src="http://ima.hunter.cuny.edu/~desouzac/ima/audioh18.mp3" preload="auto"></audio>
+        
+        <audio id="ah19" src="http://ima.hunter.cuny.edu/~desouzac/ima/audioh19.mp3" preload="auto"></audio>
+        
+        <audio id="ah20" src="http://ima.hunter.cuny.edu/~desouzac/ima/audioh20.mp3" preload="auto"></audio>
+        
+        <audio id="ah21" src="" preload="auto"></audio>
+        
+    
+      
+
+        
+      </a-assets>
+      
+      <!-- Using an event to trigger sound -->
+    <a-camera>
+      <!-- 2D Web cursor events are synthetic with WebVR and A-Frame
+          https://aframe.io/docs/1.2.0/components/cursor.html -->
+      <a-cursor></a-cursor>
+    </a-camera>
+
+      <a-box src="#H01" position="-0.2 0.5 -3" rotation="0 0 0" sound="src: #ah01;" sound-events></a-box>
+
+      <a-box src="#H02" position="0.9 0.5 -3" rotation="0 0 0" sound="src: #ah02;" sound-events></a-box>
+
+      <a-box src="#H03" position="0.9 1.7 -3" rotation="0 0 0" sound="src: #ah03;" sound-events></a-box>
+
+      <a-box src="#H04" position="-0.2 1.7 -3" rotation="0 0 0" sound="src: #ah04;" sound-events></a-box>
+      
+      <a-box src="#H06" position="-1.3 1.7 -3" rotation="0 0 0" sound="src: #ah05;" sound-events></a-box>
+      
+      <a-box src="#H07" position="-1.3 0.5 -3" rotation="0 0 0" sound="src: #ah06;" sound-events></a-box>
+      
+      <a-box src="#H08" position="2 1.7 -3" rotation="0 0 0" sound="src: #ah07;" sound-events></a-box>
+      
+      <a-box src="#H09" position="2 0.5 -3" rotation="0 0 0" sound="src: #ah08;" sound-events></a-box>
+      
+      <a-box src="#H10" position="3 0.5 -1.9" rotation="0 0 0" sound="src: #ah09;" sound-events></a-box>
+      
+      <a-box src="#H11" position="3 1.7 -1.9" rotation="0 0 0" sound="src: #ah10;" sound-events></a-box>
+      
+      <a-box src="#H12" position="3 0.5 -0.8" rotation="0 0 0" sound="src: #ah11;" sound-events></a-box>
+      
+      <a-box src="#H13" position="3 1.7 -0.8" rotation="0 0 0" sound="src: #ah12;" sound-events></a-box>
+      
+      <a-box src="#H14" position="3 1.7 0.3" rotation="0 0 0" sound="src: #ah13;" sound-events></a-box>
+      
+      <a-box src="#H15" position="3 0.5 0.3" rotation="0 0 0" sound="src: #ah14;" sound-events></a-box>
+      
+      <a-box src="#H16" position="-2.3 1.7 -1.9" rotation="0 0 0" sound="src: #ah15;" sound-events></a-box>
+      
+      <a-box src="#H17" position="-2.3 0.5 -1.9" rotation="0 0 0" sound="src: #ah16;" sound-events></a-box>
+      
+      <a-box src="#H18" position="-2.3 1.7 -0.8" rotation="0 0 0" sound="src: #ah17;" sound-events></a-box>
+      
+      <a-box src="#H19" position="-2.3 0.5 -0.8" rotation="0 0 0" sound="src: #ah18;" sound-events></a-box>
+      
+      <a-box src="#H20" position="-2.3 1.7 0.3" rotation="0 0 0" sound="src: #ah19;" sound-events></a-box>
+      
+      <a-box src="#H21" position="-2.3 0.5 0.3" rotation="0 0 0" sound="src: #ah20;" sound-events></a-box>
+      
+    
+      
+      
+      
+    <a-plane
+        src="http://ima.hunter.cuny.edu/~desouzac/ima/texture.jpg"     
+        position="0 0 -4"
+        rotation="-90 0 0"
+        width="18"
+        height="18"
+      ></a-plane>
+
+ 
+      
+      
+      <a-sky src="http://ima.hunter.cuny.edu/~desouzac/ima/humansbg.jpg"></a-sky>
+
+      
+    </a-scene>
+  </body>
+</html>
